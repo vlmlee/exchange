@@ -3,4 +3,4 @@ Market exchange written in Go
 
 ## Basic architecture
 
-<img width="2710" height="1026" alt="CleanShot 2026-11-07 at 14 47 56@2x" src="https://github.com/user-attachments/assets/c8e040c0-24a6-4889-bc76-7a24212f6a2a" />
+<img width="2762" height="1186" alt="CleanShot 2026-11-07 at 15 53 19@2x" src="https://github.com/user-attachments/assets/4489d52f-b1a0-4186-b05a-1ecba4e857f2" />
