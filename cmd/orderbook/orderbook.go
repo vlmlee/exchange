@@ -20,5 +20,5 @@ type OrderBook struct {
 	Ticker string
 	Bids []*Bid
 	Asks []*Ask
-	Depth string
+	Concavity float32 // A relative measure of liquidity
 }
