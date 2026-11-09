@@ -24,5 +24,5 @@ type OrderBook struct {
 	Ticker string
 	Bids *btree.BTree
 	Asks *btree.BTree
-	Concavity float32 // A relative measure of liquidity
+	Convexity float32 // A relative measure of liquidity
 }
