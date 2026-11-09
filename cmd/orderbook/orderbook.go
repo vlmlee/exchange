@@ -1,6 +1,10 @@
 package orderbook
 
-import "time"
+import (
+	"time"
+
+	"github.com/google/btree"
+)
 
 type Bid struct {
 	ID int
@@ -18,7 +22,7 @@ type Ask struct {
 
 type OrderBook struct {
 	Ticker string
-	Bids []*Bid
-	Asks []*Ask
+	Bids *btree.BTree
+	Asks *btree.BTree
 	Concavity float32 // A relative measure of liquidity
 }
