@@ -21,10 +21,11 @@ type Ask struct {
 }
 
 type OrderBook struct {
-	Ticker    string
-	Bids      *btree.BTree
-	Asks      *btree.BTree
-	Convexity float32 // A relative measure of liquidity
+	Ticker         string
+	Bids           *btree.BTree
+	Asks           *btree.BTree
+	Convexity      float32 // A relative measure of liquidity
+	LastTradePrice float32
 }
 
 func NewOrderBook(ticker string) *OrderBook {
