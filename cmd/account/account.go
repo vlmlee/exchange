@@ -10,7 +10,8 @@ const (
 )
 
 type Account struct {
-	Name string
-	Type Persona
-	Balance float32
+	Name      string
+	Type      Persona
+	Balance   float32
+	Portfolio map[string]int
 }
