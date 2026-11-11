@@ -8,9 +8,10 @@ import (
 
 // Market makers picks up info from a feed and uses that data to find opportunities for various tickers
 type MarketMaker struct {
-	ID string
-	Balance float32
-	Profit float32
+	ID        string
+	Balance   float64
+	Portfolio map[string]int
+	Profit    float64
 }
 
 // Places a bid  order at the specific price and amount at the specific scheduleAhead time. Can be placed immediately.
@@ -19,6 +20,6 @@ func (m *MarketMaker) PlaceBid() {
 }
 
 // Places an ask order at the specific price and amount at the specific scheduleAhead time. Can be placed immediately.
-func (m *MarketMaker) PlaceAsk(orderBook *orderbook.OrderBook, price float32, amount int, scheduleAhead time.Time) {
+func (m *MarketMaker) PlaceAsk(orderBook *orderbook.OrderBook, price float64, amount int, scheduleAhead time.Time) {
 
 }

@@ -8,7 +8,7 @@ type Exchange struct {
 	OrderBooks []*orderbook.OrderBook
 }
 
-func createExchange(orderbooks []*orderbook.OrderBook) *Exchange {
+func CreateExchange(orderbooks []*orderbook.OrderBook) *Exchange {
 	return &Exchange{
 		OrderBooks: orderbooks,
 	}
