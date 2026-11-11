@@ -8,7 +8,7 @@ import (
 
 type Order struct {
 	ID         int
-	Price      float64
+	LimitPrice float64
 	Side       string
 	Amount     int // No fractional orders allowed
 	Expiration time.Time
